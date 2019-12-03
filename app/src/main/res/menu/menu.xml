@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_setting_pin"
+        android:icon="@drawable/ic_settings"
+        android:orderInCategory="100"
+        android:title="@string/tSettingsPinTitle"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_save_note"
+        android:icon="@drawable/ic_save_note"
+        android:orderInCategory="100"
+        android:title="@string/tSavePinCod"
+        app:showAsAction="always" />
+</menu>

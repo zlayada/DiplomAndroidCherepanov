@@ -1,3 +1,42 @@
 <resources>
-    <string name="app_name">DiplomAndroidCherepanov</string>
+
+    <string name="app_name">Простые заметки</string>
+
+    <string name="tPinKeyText1">1</string>
+    <string name="tPinKeyText2">2</string>
+    <string name="tPinKeyText3">3</string>
+    <string name="tPinKeyText4">4</string>
+    <string name="tPinKeyText5">5</string>
+    <string name="tPinKeyText6">6</string>
+    <string name="tPinKeyText7">7</string>
+    <string name="tPinKeyText8">8</string>
+    <string name="tPinKeyText9">9</string>
+    <string name="tPinKeyText0">0</string>
+    <string name="tPinKeyTextClear">C</string>
+    <string name="tTextNull" />
+
+    <string name="tToastErrorPin">Неправильный PIN-код. \nПопробуйте еще раз</string>
+    <string name="tToastErrorAttemptPin">У вас закончились попытки. \nПопробуйте позже</string>
+    <string name="tTitlePinCod">"Создайте новый PIN код:</string>
+    <string name="tSavePinCod">Сохранить</string>
+    <string name="tPinTextInput">1234</string>
+    <string name="tPinTextSaved">Пин-код сохранен</string>
+    <string name="tPinTextSavedError">Ошибка. Пин-код должен состоять из четырех цифр.</string>
+    <string name="tPinTextInter">Пин-код принят</string>
+
+    <string name="tDeadline">Установить срок</string>
+    <string name="textNote">Текст заметки</string>
+    <string name="tNoteTitle">Заголовок заметки</string>
+    <string name="tBtnCreate">Создать</string>
+    <string name="tNotesListTitle">Сохраненные заметки</string>
+    <string name="tQuestion_delete_note">Удалить эту запись?</string>
+    <string name="tQuestion_note_title_delete">Внимание</string>
+
+    <string name="tPinText">Введите pin-код:</string>
+    <string name="tSettingsPinTitle">Настройки</string>
+    <string name="tNewNoteTitle">Заметка</string>
+    <string name="tNote_enter_error">Заполните хотя бы одно поле</string>
+    <string name="tCancel">Отменить</string>
+    <string name="tAdd">Добавить</string>
+    <string name="tDelete">Удалить</string>
 </resources>

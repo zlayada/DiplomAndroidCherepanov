@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pin_background_size">40dp</dimen>
+    <dimen name="pin_background_space_size">20dp</dimen>
+
+    <dimen name="pin_background_key_size">40dp</dimen>
+    <dimen name="pin_background_key_space_size">10dp</dimen>
+
+    <dimen name="pin_text_size">24dp</dimen>
+    <dimen name="pin_key_text_size">15dp</dimen>
+    <dimen name="pin_text_size_out">16dp</dimen>
+
+    <dimen name="counter_attempt_limit">3</dimen>
+    <dimen name="pin_text_input_size">55dp</dimen>
+
+    <dimen name="frame_note">5dp</dimen>
+</resources>
