@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PinActivity"
+    android:orientation="vertical"
+    android:background="@color/colorFon"
+    >
+
+    <TextView
+        android:id="@+id/PinText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="@string/tPinText"
+        android:textSize="@dimen/pin_text_size"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pin_background_size"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center|top">
+
+
+        <View
+            android:id="@+id/onePin"
+            android:layout_width="@dimen/pin_background_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@drawable/background_pin"
+            />
+
+        <View
+            android:id="@+id/space1"
+            android:layout_width="@dimen/pin_background_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <View
+            android:id="@+id/twoPin"
+            android:layout_width="@dimen/pin_background_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@drawable/background_pin"
+            />
+
+        <View
+            android:id="@+id/space2"
+            android:layout_width="@dimen/pin_background_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <View
+            android:id="@+id/threePin"
+            android:layout_width="@dimen/pin_background_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@drawable/background_pin"
+            />
+
+        <View
+            android:id="@+id/space3"
+            android:layout_width="@dimen/pin_background_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <View
+            android:id="@+id/fourPin"
+            android:layout_width="@dimen/pin_background_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@drawable/background_pin"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pin_background_key_size"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center|top">
+
+        <Button
+            android:id="@+id/key1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText1"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+        <View
+            android:id="@+id/spaceKey1"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <Button
+            android:id="@+id/key2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText2"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+        <View
+            android:id="@+id/spaceKey2"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+
+            />
+
+        <Button
+            android:id="@+id/key3_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText3"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pin_background_key_size"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/key4_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText4"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+        <View
+            android:id="@+id/spaceKey3"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <Button
+            android:id="@+id/key5_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText5"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+        <View
+            android:id="@+id/spaceKey4"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <Button
+            android:id="@+id/key6_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText6"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pin_background_key_size"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/key7_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText7"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+        <View
+            android:id="@+id/spaceKey5"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <Button
+            android:id="@+id/key8_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText8"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+        <View
+            android:id="@+id/spaceKey6"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <Button
+            android:id="@+id/key9_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText9"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pin_background_key_size"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/keyLeft_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText7"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible"
+
+            />
+
+        <View
+            android:id="@+id/spaceKey7"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <Button
+            android:id="@+id/key0_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_0_9"
+            android:text="@string/tPinKeyText0"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+        <View
+            android:id="@+id/spaceKey8"
+            android:layout_width="@dimen/pin_background_key_space_size"
+            android:layout_height="@dimen/pin_background_size"
+            android:background="@color/colorFon"
+            />
+
+        <Button
+            android:id="@+id/keyClear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pin_background_key_size"
+            android:background="@drawable/background_pin_key_clear"
+            android:text="@string/tPinKeyTextClear"
+            android:textSize="@dimen/pin_key_text_size"
+            android:textColor="@color/colorWhite"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SettingsActivityPin"
+    android:background="@color/colorFon">
+
+
+    <TextView
+        android:id="@+id/title_pin_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tTitlePinCod"
+        android:textSize="@dimen/pin_text_size"
+        android:textColor="@color/colorTextTitle"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="top|left"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/field_new_pin_cod"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pin_text_input_size"
+        android:layout_margin="16dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_pin_cod"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/field_inter_pin_cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textSize="@dimen/pin_text_size"
+            android:layout_weight="2"
+            android:hint="@string/tPinTextInput"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_vision_pin_cod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@color/colorFon"
+            app:layout_constraintStart_toEndOf="@+id/field_inter_pin_cod"
+            android:src="@drawable/im_no_vision"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_setting_pin_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tSavePinCod"
+        app:layout_constraintTop_toBottomOf="@+id/field_new_pin_cod"
+        android:layout_margin="16dp"
+        android:background="@drawable/background_pin_key_clear"
+        android:textColor="@color/colorWhite"
+        android:onClick="onClick"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
